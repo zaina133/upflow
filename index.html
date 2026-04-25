@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Special+Gothic+Condensed+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Gothic+Condensed+One&display=swap');
+
+
+        body {
+
+            background-color: black;
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            color: white;
+            display: flex;
+            border: solid black 3px;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .header span {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            padding-right: 500px;
+            font-size: 20px;
+        }
+
+        h2 {
+            font-family: "Pathway Gothic One", sans-serif;
+            color: rgba(255, 103, 9, 1);
+            font-size: 30px;
+
+        }
+
+        .body {
+            background-position: 825px, 149px, center;
+            background-attachment: fixed, scroll, fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background-size: 822px;
+        }
+
+        .part1 {
+            height: 822px;
+            /* width: 100vw; */
+            background-image: url("Rectangle\ 6000.png"), url("Rectangle\ 5999.png"), url("friends-social-media\ 1.png");
+            background-repeat: no-repeat;
+            background-position: 825px, 149px, center;
+            background-attachment: fixed, scroll, fixed;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 100px;
+
+        }
+
+        .box1-part1 {
+            height: 594px;
+            width: 562px;
+            padding-left: 180px;
+            padding-top: 199.8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: white;
+
+        }
+
+        .box1-part1 u {
+            font-size: 20px;
+            color: rgba(255, 255, 255, 1);
+            font-family: "Pathway Gothic One", sans-serif;
+            padding-top: 30px;
+
+        }
+
+        .box1-part1 p {
+            font-size: 20px;
+            font-family: "Pathway Gothic One", sans-serif;
+
+        }
+
+        .box1-part1 button {
+            width: 156px;
+            height: 47px;
+
+            background: none;
+            color: aliceblue;
+            box-shadow: none;
+        }
+
+        .box2-part1 {
+            width: 244px;
+            height: 542.7px;
+            transform: skew(-13.38deg);
+            margin-right: 200px;
+            background-color: rgba(255, 103, 9, 1);
+            color: rgba(255, 255, 255, 1);
+            margin-top: 123.8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .box2-part1 p {
+            transform: rotate(-90.38deg);
+            font-family: "Pathway Gothic One", sans-serif;
+            font-size: 20px;
+        }
+
+        .bar {
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            background: none;
+            padding-bottom: 20px;
+            margin-top: -5%;
+            /* position: relative; */
+            /* z-index: 3; */
+        }
+
+        .bar-box1 {
+            width: 369px;
+            height: 144px;
+            background-color: rgba(72, 70, 67, 1);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .bar-box2 {
+            width: 369px;
+            height: 144px;
+            background-color: rgba(72, 70, 67, 1);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .bar-box3 {
+            width: 369px;
+            height: 144px;
+            background-color: rgba(72, 70, 67, 1);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .bar h1 {
+            width: 97px;
+            height: 128px;
+            background-color: rgba(255, 103, 9, 1);
+            text-align: center;
+            align-content: center;
+            margin: 10px;
+        }
+
+        .bar span {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-family: "Pathway Gothic One", sans-serif;
+
+        }
+
+        .part2 {
+            top: 992px;
+            height: 650px;
+            background-image: url("Frame\ 1984077862.png"), url("Rectangle\ 6002.png"), radial-gradient(rgb(63, 63, 67), black);
+            background-repeat: no-repeat;
+            background-position: 250px, 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .part2-box1 {
+            height: 444px;
+            /* width: 484px; */
+            margin-top: 100px;
+            background-position: 250px, 100px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding-left: 220px;
+            padding-top: 250px;
+        }
+
+        .biggerbox {
+            top: 16px;
+            width: 283px;
+            background-color: rgba(72, 70, 67, 1);
+            justify-items: center;
+        }
+
+        .smallbox {
+            width: 273px;
+            height: 155px;
+            padding: 10px;
+            border: solid 1px rgba(255, 103, 9, 1);
+            margin: 10px;
+            font-family: "Pathway Gothic One", sans-serif;
+            text-align: center;
+        }
+
+        .smallbox span {
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            width: 194px;
+            height: 68px;
+            color: rgba(255, 103, 9, 1);
+        }
+
+        .part2-box2 {
+            width: 440px;
+            height: 493px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            margin-right: 200px;
+            align-self: center;
+            gap: 40px;
+        }
+
+        .paragraph1 {
+            display: flex;
+            font-size: 20px;
+            color: rgba(255, 103, 9, 1);
+        }
+
+        .paragraph1+span {
+            font-size: 42px;
+            font-family: "Pathway Gothic One", sans-serif;
+        }
+
+        #part2-paragraph {
+            font-size: 20px;
+            font-family: "Pathway Gothic One", sans-serif;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .paragraph2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: rgba(150, 150, 150, 1);
+        }
+
+        .paragraph2 h1 {
+            font-size: 42px;
+            color: rgba(255, 103, 9, 1);
+        }
+
+        #person {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .person {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .paragraph3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .paragraph3 button {
+            width: 160px;
+            height: 47px;
+            border-radius: 25px;
+            background-color: rgba(255, 103, 9, 1);
+        }
+
+        .part3 {
+            height: 325px;
+            background-image: url("Rectangle\ 6003.png");
+            background-position: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .part3 span {
+            color: rgba(255, 103, 9, 1);
+        }
+
+        .part3 button {
+            width: 167px;
+            height: 47px;
+            border-radius: 25px;
+            color: white;
+            background-color: rgba(255, 103, 9, 1);
+        }
+
+        .contain {
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+        }
+
+        .cards {
+            height: 428px;
+            background-image: url("Component\ 42.png"), url("Component\ 43.png"), url("Component\ 44.png");
+            background-repeat: no-repeat;
+            background-position: 0px, 530px, 1060px;
+        }
+
+        .orange-bar {
+            height: 210px;
+            background-color: rgba(255, 103, 9, 1);
+            color: white;
+            font-size: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-family: "Pathway Gothic One", sans-serif;
+        }
+
+        .part4 {
+            height: 1055px;
+            width: 1440px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .part4-box1 {
+            width: 646px;
+            /* height: 136px; */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            font-size: 42px;
+            align-items: center;
+            justify-content: space-between;
+            justify-self: center;
+            padding-top: 70px;
+            font-family: "Pathway Gothic One", sans-serif;
+
+        }
+
+        .imagee {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .part4-box2 {
+            width: 1044px;
+            height: 200px;
+            display: flex;
+            justify-content: space-between;
+            justify-self: center;
+            font-family: "Pathway Gothic One", sans-serif;
+
+
+        }
+
+        #box {
+            width: 225px;
+            height: 200px;
+            background-color: rgba(44, 46, 51, 1);
+            color: rgba(255, 103, 9, 1);
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #box i {
+            width: 40px;
+            height: 40px;
+            color: white;
+        }
+
+        .part4-box3 {
+            width: 1193px;
+            height: 346.5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 48px;
+
+        }
+
+        .part4-part1 {
+            height: 83px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            font-family: "Pathway Gothic One", sans-serif;
+
+
+        }
+
+        .part4-part1 p {
+            color: rgba(255, 103, 9, 1);
+            font-size: 20px;
+        }
+
+        .part4-part1 h1 {
+            color: white;
+            font-size: 42px;
+        }
+
+        .part4-part2 {
+            height: 215.5px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .part4-card {
+            position: relative;
+            width: 342.67852783203125px;
+            height: 200.49990844726562px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .orangeBox {
+            position: absolute;
+            width: 71.42634582519531px;
+            height: 77.53115844726562px;
+            align-self: flex-end;
+            background-color: rgba(255, 103, 9, 1);
+            z-index: -1;
+
+        }
+
+        .blackBox {
+            position: absolute;
+            width: 164.8300323486328px;
+            height: 77.53115844726562px;
+            background-color: rgba(44, 46, 51, 1);
+            z-index: -1;
+        }
+
+        .discription {
+            position: relative;
+            width: 312.5665588378906px;
+            height: 125.75920867919922px;
+            background-color: black;
+            color: white;
+            transform: translate(17px, 45px);
+            z-index: 20;
+            padding: 20px;
+            padding-top: 40px;
+
+        }
+
+        .discription img {
+            position: absolute;
+            left: 20px;
+            top: -20px;
+            z-index: 2;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .stars {
+            width: 40px;
+            height: 8.5px;
+            color: white;
+            display: flex;
+        }
+
+        .stars+span {
+            color: rgba(255, 103, 9, 1);
+            font-size: 6.1px;
+        }
+
+        .s-div {
+            display: flex;
+            gap: 60px;
+            justify-items: center;
+        }
+
+        .dText {
+
+            padding-left: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 5px;
+            font-size: 12px;
+            font-family: "Pathway Gothic One", sans-serif;
+
+        }
+
+        footer {
+            width: 100%;
+            height: 397px;
+            top: 200px;
+        }
+
+        .footer-box1 {
+            width: 380px;
+            height: 124px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            color: white;
+            padding-left: 80px;
+           padding-top:100px;
+        }
+
+        .footer-box1 h3 {
+            font-size: 24px;
+            font-family: "Pathway Gothic One", sans-serif;
+        }
+
+        .footer-box1 p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h2>UpFlow</h2>
+        <span class="header-right">
+            <p>Home</p>
+
+            <p>About</p>
+            <p>Plans</p>
+            <p>Contact us</p>
+        </span>
+    </div>
+    <div class="body">
+        <div class="part1">
+            <div class="box1-part1">
+                <u>Best Digital Agency</u>
+                <h2 style="font-size: 85px;">Grow Your</h2>
+                <h2 style="font-size: 85px; color: rgba(255, 103, 9, 1);"> Digital <u
+                        style="font-size: 85px; color: rgba(255, 103, 9, 1); line-height: 82px;"> Agency </u></h2>
+                <p>A leading voice in low-income binso policy and the nation's largest nonprofit business installer</p>
+                <button>Explore Now</button>
+            </div>
+            <div class="box2-part1">
+                <p>FaceBook</p>
+                <p>Twitter</p>
+                <p>Instagram</p>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="bar-box1">
+                <h1>01</h1>
+                <span>
+                    <h3>Award winning agency</h3>
+                    <p style="font-size: 16px;">24/7 Access to the Heart of Collaboration</p>
+                </span>
+            </div>
+            <div class="bar-box2">
+                <h1>02</h1>
+                <span>
+                    <h3>Best quality work</h3>
+                    <p style="font-size: 16px;">High-Speed Internet & State-of-the-Art Facilities</p>
+                </span>
+            </div>
+            <div class="bar-box3">
+                <h1>03</h1>
+                <span>
+                    <h3>Satisfaction guarantee</h3>
+                    <p style="font-size: 16px;">Flexible Membership Plans to Suit Your Needs</p>
+                </span>
+            </div>
+        </div>
+        <div class="part2">
+            <div class="part2-box1">
+                <div class="biggerbox">
+                    <div class="smallbox">
+                        <span>
+                            <i style="padding-top:10px ;" class="fa-regular fa-calendar"></i>
+                            <h3 style="color: white;">+ 30</h3>
+                        </span>
+                        <p style="color: rgba(157, 151, 151, 1); font-size: 30px;">Years of Experience</p>
+                    </div>
+                </div>
+            </div>
+            <div class="part2-box2">
+                <span class="paragraph1">
+                    <img src="./Group 1000003299.png" alt="">
+                    <h4>Get to know us</h4>
+                </span>
+                <span>
+                    <p>Your best digital solution
+                        <span style="color: rgba(255, 103, 9, 1);">service</span> partner
+                    </p>
+                </span>
+                <p id="part2-paragraph">There are many variations of simply free text passages of available.</p>
+                <span class="paragraph2">
+                    <h1>+ 30</h1>
+                    <p>Years of working Experience in this company</p>
+                </span>
+                <span class="paragraph3">
+                    <div class="person">
+                        <img width="15px" height="9px" src="./Frame 1984077854.png" alt="">
+                        <div id="person">
+                            <h2>CO FOUNDER</h2>
+                            <p>Helmy Nasr</p>
+                        </div>
+                    </div>
+
+                    <button>Discover More</button>
+                </span>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="contain">
+        <div class="part3">
+            <h1>Subscribe now to get more <span> information</span></h1>
+            <button>Subscribe Now</button>
+        </div>
+        <div class="cards">
+        </div>
+    </div>
+    <div class="orange-bar">
+        <h3>Problem Statement</h3>
+        <h3>.</h3>
+        <h3>User Interface</h3>
+        <h3>.</h3>
+        <h3>Visual Design</h3>
+        <h3>.</h3>
+        <h3>User Experience</h3>
+    </div>
+    <div class="part4">
+        <div class="part4-box1">
+            <div class="imagee">
+                <img width="15px" height="9px" src="./Group 1000003299.png" alt="">
+                <h2>Services We're offering</h2>
+            </div>
+            <h3>We’re Dedicated to Serve </h3>
+            <h3>you <span style="color: rgba(255, 103, 9, 1);">All Time</span></h3>
+        </div>
+        <div class="part4-box2">
+            <div id="box">
+                <i class="fa-solid fa-pen-nib"></i>
+                <h2> Designs</h2>
+            </div>
+            <div id="box">
+                <i class="fa-solid fa-check"></i>
+                <h2> Solutions</h2>
+            </div>
+            <div id="box">
+                <i class="fa-brands fa-algolia"></i>
+                <h2>Research</h2>
+            </div>
+            <div id="box">
+                <i class="fa-regular fa-gem"></i>
+                <h2>Quality</h2>
+            </div>
+        </div>
+        <div class="part4-box3">
+            <div class="part4-part1">
+                <p> <i class="fa-solid fa-braille" style="color: rgba(255, 103, 9, 1); transform: rotate(90deg);"></i>
+                    testimonials</p>
+                <h1>What clients said!</h1>
+            </div>
+            <div class="part4-part2">
+                <div class="part4-card">
+                    <div class="discription">
+                        <img src="./Rectangle 12.png" alt="">
+                        <div class="dText">
+                            <div class="s-div">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>5.0 rating
+                                </span>
+                            </div>
+                            <h3>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit
+                                mollit.</h3>
+                            <h2 style="font-size: 10px;">Youssef</h2>
+                            <h3 style="color: rgba(255, 103, 9, 1); font-size: 5px;">Business owner</h3>
+                        </div>
+                    </div>
+                    <div class="orangeBox"></div>
+                    <div class="blackBox"></div>
+                </div>
+                <div class="part4-card">
+                    <div class="discription">
+                        <img src="./Rectangle 122.png" alt="">
+                        <div class="dText">
+                            <div class="s-div">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>5.0 rating
+                                </span>
+                            </div>
+                            <h3>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit
+                                mollit.</h3>
+                            <h2 style="font-size: 10px;">Elisa Grant</h2>
+                            <h3 style="color: rgba(255, 103, 9, 1); font-size: 5px;">Business owner</h3>
+                        </div>
+                    </div>
+                    <div class="orangeBox"></div>
+                    <div class="blackBox"></div>
+
+                </div>
+                <div class="part4-card">
+                    <div class="discription">
+                        <img src="./Rectangle 1222.png" alt="">
+                        <div class="dText">
+                            <div class="s-div">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>5.0 rating
+                                </span>
+                            </div>
+                            <h3>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit
+                                mollit.</h3>
+                            <h2 style="font-size: 10px;">Helmy</h2>
+                            <h3 style="color: rgba(255, 103, 9, 1); font-size: 5px;">Business owner</h3>
+                        </div>
+                    </div>
+                    <div class="orangeBox"></div>
+                    <div class="blackBox"></div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer-box1">
+            <h3>About</h3>
+            <p>Yorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
+                aliquet odio
+                mattis.</p>
+        </div>
+        <div class="footer-box2">
+            
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
